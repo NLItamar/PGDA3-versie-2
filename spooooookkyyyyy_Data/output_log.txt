@@ -18,7 +18,7 @@ Platform assembly: D:\PGD\spooooookkyyyyy_Data\Managed\UnityEngine.UI.dll (this 
 Loading D:\PGD\spooooookkyyyyy_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: D:\PGD\spooooookkyyyyy_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading D:\PGD\spooooookkyyyyy_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.137 seconds
+- Completed reload, in  0.053 seconds
 Platform assembly: D:\PGD\spooooookkyyyyy_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\PGD\spooooookkyyyyy_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -41,7 +41,7 @@ The referenced script on this Behaviour (Game Object 'Lamp Light') is missing!
  
 (Filename:  Line: 1656)
 
-UnloadTime: 0.803161 ms
+UnloadTime: 0.743507 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 343c -> priority: 1 
-  Thread -> id: 2dfc -> priority: 1 
+  Thread -> id: 34c8 -> priority: 1 
+  Thread -> id: 31fc -> priority: 1 
