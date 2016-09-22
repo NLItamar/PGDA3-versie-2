@@ -7,6 +7,7 @@ public class ClickLightButton : MonoBehaviour
     public float range;
     Ray ray;
     RaycastHit hit;
+    public float timer = 120;
 
     public int count = 0;
     public bool clicked = false;
@@ -17,19 +18,19 @@ public class ClickLightButton : MonoBehaviour
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         Physics.Raycast(ray, out hit,range);
-        //Debug.Log(hit.transform.gameObject.name);
+        
 
         if (clicked)
         {
             count++;
-            if (count % 5 == 0 && count <= 60)
+            if (count % 10 == 0 && count <=timer)
             {
                 LightSource.enabled = !LightSource.enabled;
             }
 
 
 
-            if (count >= 60)
+            if (count >timer)
             {
                 count = 0;
                 clicked = false;

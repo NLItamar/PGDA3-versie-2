@@ -13,17 +13,19 @@ public class PlayerMovement : MonoBehaviour {
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+
         m_OriginalRotation = transform.localRotation;
         rotatorScript = GetComponentInChildren<SimpleMouseRotator>();
     }
 
     void Update()
     {
+        Screen.lockCursor = true;
+        Screen.lockCursor = false;
         transform.localRotation = m_OriginalRotation * Quaternion.Euler(0, rotatorScript.m_FollowAngles.y, 0);
 
-        zmove = Mathf.Cos(gameObject.transform.GetChild(0).transform.rotation.x) * moveSpeed * Time.deltaTime;
-        ymove = Mathf.Sin(gameObject.transform.GetChild(0).transform.rotation.x) * -moveSpeed * Time.deltaTime;
+        zmove =  moveSpeed * Time.deltaTime;
+        
         
         
         float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
@@ -37,11 +39,21 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetKey("w"))
         {
-            transform.Translate(0, ymove, zmove);
+            transform.Translate(0, 0, zmove);
         }
         if (Input.GetKey("s"))
         {
-            transform.Translate(0, -ymove, -zmove);
+            transform.Translate(0, 0, -zmove);
         }
+        if (Input.GetKey("z"))
+        {
+            transform.Translate(0, 0.1f, 0);
+        }
+        if (Input.GetKey("x"))
+        {
+            transform.Translate(0, -0.1f, 0);
+        }
+
+
     }
 }
