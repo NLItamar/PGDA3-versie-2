@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Itamar.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Marc.unity
+=======
+- path: Assets/Scenes/Daniel.unity
+>>>>>>> f7f6355bf1877fe8bf5ba7f57576afbc3096239f
+>>>>>>> 7e4f464e0546043439b7aa38a7d3397ac21c2c30
   isLoaded: 1
   isActive: 1
