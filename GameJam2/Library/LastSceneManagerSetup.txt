@@ -1,6 +1,10 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/Scenes/Tim.unity
+=======
+- path: Assets/Scenes/Itamar.unity
+>>>>>>> 3ecc8ab0e41e21645aeec9735c58aef18a73f196
 =======
 <<<<<<< HEAD
 - path: Assets/Scenes/Marc.unity

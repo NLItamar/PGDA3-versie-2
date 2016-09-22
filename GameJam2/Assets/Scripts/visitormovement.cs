@@ -32,6 +32,11 @@ public class visitormovement : MonoBehaviour {
         {
             thirdFloor();
         }
+
+        if(check3)
+        {
+            fifthFloor();
+        }
     }
 
     void secondFloor()
@@ -66,6 +71,22 @@ public class visitormovement : MonoBehaviour {
                     agent.SetDestination(go3.transform.position);
                     check2 = false;
                     check3 = true;
+                }
+            }
+        }
+    }
+
+    void fifthFloor()
+    {
+        if (!agent.pathPending)
+        {
+            if (agent.remainingDistance <= agent.stoppingDistance)
+            {
+                if (!agent.hasPath || agent.velocity.sqrMagnitude == 0f)
+                {
+                    agent.SetDestination(go1.transform.position);
+                    check3 = false;
+                    check1 = true;
                 }
             }
         }
