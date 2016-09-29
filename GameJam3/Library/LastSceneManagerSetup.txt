@@ -1,10 +1,4 @@
 sceneSetups:
-- path: Assets/Tim.unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Daniel.unity
-  isLoaded: 1
-  isActive: 0
-- path: Assets/Marc.unity
+- path: Assets/scenes/Itamar.unity
   isLoaded: 1
   isActive: 1
